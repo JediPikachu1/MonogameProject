@@ -1,0 +1,5 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/defaultFont.spritefont","C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/bin/DesktopGL/Content/defaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",414,37922,0.220347
+"C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/FadeImage.png","C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/bin/DesktopGL/Content/FadeImage.xnb","TextureProcessor","Texture2DContent",120,281,0.2953603
+"C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/scourgekeyart.png","C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/bin/DesktopGL/Content/scourgekeyart.xnb","TextureProcessor","Texture2DContent",2143643,4794725,0.560189
+"C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/ScreenManager/FadeImage.png","C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/bin/DesktopGL/Content/ScreenManager/FadeImage.xnb","TextureProcessor","Texture2DContent",180,281,0.0080479
