@@ -38,9 +38,13 @@ namespace MonogameProject
             if (Image.IsActive)
             {
                 if (!Inc)
+                {
                     Image.Alpha -= FadeSpd * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
                 else
+                {
                     Image.Alpha += FadeSpd * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                }
 
                 if (Image.Alpha < 0.0f)
                 {
@@ -52,11 +56,13 @@ namespace MonogameProject
                     Inc = false;
                     Image.Alpha = this.Alpha;
                 }
-                
-                
+
+
             }
             else
+            {
                 Image.Alpha = 1.0f;
+            }
         }
     }
 }
