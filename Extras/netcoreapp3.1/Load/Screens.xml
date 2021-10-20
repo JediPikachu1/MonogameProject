@@ -5,13 +5,16 @@
     <Effects>FadeEffect</Effects>
     <IsActive>true</IsActive>
     <Text>Hello world</Text>
-  </Image>
+    <Scale>
+      <X>1.4</X>
+      <Y>1.4</Y>
+    </Scale>
     <Position>
       <X>
-        0
+        240
       </X>
       <Y>
-        0
+        100
       </Y>
     </Position>
     <FadeEffect>
@@ -19,5 +22,5 @@
         0.5
       </FadeSpd>
     </FadeEffect>
-  
+  </Image>
 </SplashScreen>
