@@ -6,8 +6,14 @@ namespace MonogameProject
 {
     public class Game1 : Game
     {
+
+
+        //private Texture2D button;
+       
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
+        
 
         public Game1()
         {
@@ -29,6 +35,8 @@ namespace MonogameProject
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            //button = Content.Load<Texture2D>("poelogin");
+
             ScreenManager.Instance.GraphicsDevice = GraphicsDevice;
             ScreenManager.Instance.SpriteBatch = _spriteBatch;
 
@@ -46,16 +54,47 @@ namespace MonogameProject
                 Exit();
 
             // TODO: Add your update logic here
+            ScreenManager.Instance.Update(gameTime);
 
             base.Update(gameTime);
+            /*
+            switch (_state)
+            {
+                case GameState.SplashScreen:
+                    UpdateSplashScreen(gameTime);
+                    break;
+                case GameState.MainMenu:
+                    UpdateMainMenu(gameTime);
+                    break;
+            }
+            */
         }
 
+        /*
+         * void UpdateSplashScreen(GameTime gameTime)
+        {
+            if (InputManager.Instance.KeyPressed(Keys.Enter))
+            {
+                _state = GameState.MainMenu;
+            }
+        }
+
+        void UpdateMainMenu(GameTime gameTime)
+        {
+            if (InputManager.Instance.KeyPressed(Keys.RightShift))
+            {
+                _state = GameState.SplashScreen;
+            }
+        }
+
+        */
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
             _spriteBatch.Begin();
+            
             ScreenManager.Instance.Draw(_spriteBatch);
             _spriteBatch.End();
 

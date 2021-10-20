@@ -32,6 +32,30 @@
 /processorParam:TextureFormat=Color
 /build:FadeImage.png
 
+#begin poelogin.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:poelogin.png
+
+#begin poemainmenu.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:poemainmenu.png
+
 #begin scourgekeyart.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -43,18 +67,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:scourgekeyart.png
-
-#begin ScreenManager/FadeImage.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:ScreenManager/FadeImage.png
 
 #begin ScreenManager/FadeImage.png
 /importer:TextureImporter

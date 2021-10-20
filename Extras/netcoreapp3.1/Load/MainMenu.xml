@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MainMenu>
+  <Image>
+    <Path>poemainmenu</Path>
+    <Effects>FadeEffect</Effects>
+    <IsActive>false</IsActive>
+    <Text>help</Text>
+    <Position>
+      <X>
+        0
+      </X>
+      <Y>
+        0
+      </Y>
+    </Position>
+    <FadeEffect>
+      <FadeSpeed>0.5</FadeSpeed>
+    </FadeEffect>
+  </Image>
+</MainMenu>

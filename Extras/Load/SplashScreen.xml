@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SplashScreen>
+  <Image>
+    <Path>scourgekeyart</Path>
+    <Effects>FadeEffect</Effects>
+    <IsActive>true</IsActive>
+    <Text>Hello world</Text>
+    <Scale>
+      <X>1.4</X>
+      <Y>1.4</Y>
+    </Scale>
+    <Position>
+      <X>
+        240
+      </X>
+      <Y>
+        100
+      </Y>
+    </Position>
+    <FadeEffect>
+      <FadeSpeed>
+        0.5
+      </FadeSpeed>
+    </FadeEffect>
+  </Image>
+</SplashScreen>

@@ -6,10 +6,14 @@
   <SourceFiles>
     <File>C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/defaultFont.spritefont</File>
     <File>C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/FadeImage.png</File>
+    <File>C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/poelogin.png</File>
+    <File>C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/poemainmenu.png</File>
     <File>C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/scourgekeyart.png</File>
     <File>C:/Users/natha/source/repos/MonogameProject/MonogameProject/Content/ScreenManager/FadeImage.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

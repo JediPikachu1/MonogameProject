@@ -60,7 +60,7 @@ namespace MonogameProject
 
             XmlGameScreenManager = new XmlManager<GameScreen>();
             XmlGameScreenManager.type = currentScreen.type;
-            currentScreen = XmlGameScreenManager.Load("Load/Screens.xml");
+            currentScreen = XmlGameScreenManager.Load("Load/SplashScreen.xml");
 
         }
 
@@ -72,7 +72,30 @@ namespace MonogameProject
             Image.Alpha = 0.0f;
             IsTransitioning = true;
         }
+        public void Transition(GameTime gameTime)
+        {
+            if (IsTransitioning)
+            {
+                Image.Update(gameTime);
+                if (Image.Alpha == 1.0f)
+                {
 
+                    currentScreen.UnloadContent();
+                    currentScreen = newScreen;
+                    XmlGameScreenManager.type = currentScreen.type;
+                    if (File.Exists(currentScreen.XmlPath))
+                    {
+                        currentScreen = XmlGameScreenManager.Load(currentScreen.XmlPath);
+                    }
+                    currentScreen.LoadContent();
+                }
+                else if (Image.Alpha == 0.0f)
+                {
+                    Image.IsActive = false;
+                    IsTransitioning = false;
+                }
+            }
+        }
         public void LoadContent(ContentManager Content)
         {
             this.Content = new ContentManager(Content.ServiceProvider, "Content");
@@ -99,27 +122,6 @@ namespace MonogameProject
                 Image.Draw(spriteBatch);
         }
 
-        public void Transition(GameTime gameTime)
-        {
-            if (IsTransitioning)
-            {
-                Image.Update(gameTime);
-                if (Image.Alpha == 1.0f)
-                {
-
-                    currentScreen.UnloadContent();
-                    currentScreen = newScreen;
-                    XmlGameScreenManager.type = currentScreen.type;
-                    if (File.Exists(currentScreen.XmlPath))
-                        currentScreen = XmlGameScreenManager.Load(currentScreen.XmlPath);
-                    currentScreen.LoadContent();
-                }
-                else if (Image.Alpha == 0.0f)
-                {
-                    Image.IsActive = false;
-                    IsTransitioning = false;
-                }
-            }
-        }
+        
     }
 }

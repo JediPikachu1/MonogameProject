@@ -15,7 +15,7 @@ namespace MonogameProject
     {
         protected Image Image;
 
-        public bool isActive;
+        public bool IsActive;
 
         protected float Alpha = 0;
 

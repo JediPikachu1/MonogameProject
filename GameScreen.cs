@@ -21,7 +21,7 @@ namespace MonogameProject
         public GameScreen()
         {
             type = this.GetType();
-            XmlPath = "Load/" + type.ToString().Replace("MonogameProject", "") + ".xml";
+            XmlPath = "Load/" + type.ToString().Replace("MonogameProject.", "") + ".xml";
         }
 
         public virtual void LoadContent()
@@ -43,5 +43,6 @@ namespace MonogameProject
         {
 
         }
+
     }
 }

@@ -12,12 +12,12 @@ namespace MonogameProject
 {
     public class FadeEffect : ImageEffect
     {
-        public float FadeSpd;
+        public float FadeSpeed;
         public bool Inc;
-
+        
         public FadeEffect()
         {
-            FadeSpd = 1;
+            FadeSpeed = 1;
             Inc = false;
         }
 
@@ -39,11 +39,11 @@ namespace MonogameProject
             {
                 if (!Inc)
                 {
-                    Image.Alpha -= FadeSpd * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    Image.Alpha -= FadeSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 }
                 else
                 {
-                    Image.Alpha += FadeSpd * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                    Image.Alpha += FadeSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 }
 
                 if (Image.Alpha < 0.0f)

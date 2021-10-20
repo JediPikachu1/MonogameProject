@@ -48,19 +48,19 @@ namespace MonogameProject
                 effect = (T)Activator.CreateInstance(typeof(T));
             else
             {
-                (effect as ImageEffect).isActive = true;
+                (effect as ImageEffect).IsActive = true;
                 var obj = this;
                 (effect as ImageEffect).LoadContent(ref obj);
             }
 
-            effectList.Add(effect.GetType().ToString().Replace("inclass915", ""), (effect as ImageEffect));
+            effectList.Add(effect.GetType().ToString().Replace("MonogameProject.", ""), (effect as ImageEffect));
         }
 
         public void ActivateEffect (string effect)
         {
             if (effectList.ContainsKey(effect))
             {
-                effectList[effect].isActive = true;
+                effectList[effect].IsActive = true;
                 var obj = this;
                 effectList[effect].LoadContent(ref obj);
             }
@@ -70,7 +70,7 @@ namespace MonogameProject
         {
             if (effectList.ContainsKey(effect))
             {
-                effectList[effect].isActive = false;
+                effectList[effect].IsActive = false;
                 effectList[effect].UnloadContent();
             }
         }
@@ -127,15 +127,19 @@ namespace MonogameProject
         {
             content.Unload();
             foreach (var effect in effectList)
+            {
                 DeactivateEffect(effect.Key);
+            }
         }
 
         public void Update(GameTime gameTime)
         {
             foreach( var effect in effectList)
             {
-                if (effect.Value.isActive)
+                if (effect.Value.IsActive)
+                {
                     effect.Value.Update(gameTime);
+                }
                     
             }
         }

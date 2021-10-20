@@ -44,12 +44,12 @@ namespace MonogameProject
             Image.Update(gameTime);
 
             if (InputManager.Instance.KeyPressed(Keys.Enter, Keys.Z))
-                ScreenManager.Instance.ChangeScreens("SplashScreen");
+                ScreenManager.Instance.ChangeScreens("MainMenu");
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            // base.Draw(spriteBatch);
+            base.Draw(spriteBatch);
             
             // spriteBatch.Draw(image, destinationRectangle: new Rectangle(0, 0, 1920, 1080), Color.White);
             Image.Draw(spriteBatch);
