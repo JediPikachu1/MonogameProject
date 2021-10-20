@@ -44,3 +44,5 @@ C:\Users\natha\source\repos\MonogameProject\MonogameProject\Extras\netcoreapp3.1
 C:\Users\natha\source\repos\MonogameProject\MonogameProject\Extras\netcoreapp3.1\Content\ScreenManager\FadeImage.xnb
 C:\Users\natha\source\repos\MonogameProject\MonogameProject\Extras\netcoreapp3.1\Content\poemainmenu.xnb
 C:\Users\natha\source\repos\MonogameProject\MonogameProject\Extras\netcoreapp3.1\Content\poelogin.xnb
+C:\Users\natha\source\repos\MonogameProject\MonogameProject\Extras\netcoreapp3.1\Content\wraeclastmap.xnb
+C:\Users\natha\source\repos\MonogameProject\MonogameProject\Extras\netcoreapp3.1\Content\stickmansteve.xnb

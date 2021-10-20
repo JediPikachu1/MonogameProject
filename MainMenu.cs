@@ -38,7 +38,7 @@ namespace MonogameProject
 
             base.LoadContent();
 
-            _button = content.Load<Texture2D>("poelogin");
+            //_button = content.Load<Texture2D>("poelogin");
             Image.LoadContent();
 
         }
@@ -55,6 +55,11 @@ namespace MonogameProject
         {
             base.Update(gameTime);
             Image.Update(gameTime);
+
+            if (InputManager.Instance.KeyPressed(Keys.Enter))
+            {
+                ScreenManager.Instance.ChangeScreens("Level1");
+            }
         }
 
         public override void Draw(SpriteBatch spriteBatch)

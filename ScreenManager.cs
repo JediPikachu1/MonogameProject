@@ -25,9 +25,9 @@ namespace MonogameProject
         [XmlIgnore]
         public ContentManager Content { private set; get; }
 
-        GameScreen currentScreen, newScreen;
+        public GameScreen currentScreen, newScreen;
 
-        XmlManager<GameScreen> XmlGameScreenManager;
+        public XmlManager<GameScreen> XmlGameScreenManager;
 
         [XmlIgnore]
         public GraphicsDevice GraphicsDevice;

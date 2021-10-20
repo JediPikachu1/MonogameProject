@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using System.Collections.Generic;
 namespace MonogameProject
 {
     public class Game1 : Game
@@ -12,8 +13,9 @@ namespace MonogameProject
        
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
         
+        private Texture2D _stickmanTexture;
+        private Sprite _stickmanTest;
 
         public Game1()
         {
@@ -41,6 +43,9 @@ namespace MonogameProject
             ScreenManager.Instance.SpriteBatch = _spriteBatch;
 
             ScreenManager.Instance.LoadContent(Content);
+            _stickmanTexture = Content.Load<Texture2D>("stickmansteve");
+
+            _stickmanTest = new Sprite(_stickmanTexture);
             // TODO: use this.Content to load your game content here
         }
 
@@ -55,6 +60,8 @@ namespace MonogameProject
 
             // TODO: Add your update logic here
             ScreenManager.Instance.Update(gameTime);
+
+            _stickmanTest.Update(gameTime);
 
             base.Update(gameTime);
             /*
@@ -96,6 +103,13 @@ namespace MonogameProject
             _spriteBatch.Begin();
             
             ScreenManager.Instance.Draw(_spriteBatch);
+            /*
+            if (ScreenManager.Instance.currentScreen == ScreenManager.Instance.XmlGameScreenManager.)
+            {
+                _stickmanTest.Draw(_spriteBatch);
+            }
+            */
+            //_stickmanTest.Draw(_spriteBatch);
             _spriteBatch.End();
 
             base.Draw(gameTime);

@@ -18,6 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Extras\Load\MainMenu.xml" />
+    <Content Include="Extras\netcoreapp3.1\Load\Game1.xml" />
     <Content Include="Extras\netcoreapp3.1\Load\ScreenManager.xml" />
   </ItemGroup>
   <ItemGroup>

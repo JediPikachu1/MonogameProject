@@ -4,7 +4,7 @@
     <Path>poemainmenu</Path>
     <Effects>FadeEffect</Effects>
     <IsActive>false</IsActive>
-    <Text>help</Text>
+    <Text>Press Enter</Text>
     <Position>
       <X>
         0
